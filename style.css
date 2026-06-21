@@ -1,0 +1,114 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cormorant Garamond', sans-serif;
+}
+
+
+
+/* DARK OVERLAY */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 10, 30, 0.55);
+  z-index: -1;
+}
+
+/* HERO CENTER */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color:#0B2545;
+  background-image: url("images/genelresim.jpg");
+background-size: cover;
+background-position: center;
+   
+}
+
+/* LOGO */
+.logo {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,.5);
+}
+
+/* SUBTITLE */
+.subtitle {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* BUTTON */
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+.btn {
+  margin-top: 30px;
+  padding: 14px 28px;
+  background:  #0B2545;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: rgb(115, 166, 176);
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 60px;
+
+    z-index: 10;
+}
+
+.logo-nav{
+    color: #0B2545;
+    font-size: 24px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.nav-links{
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-links a{
+    color: #0B2545;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.nav-links a:hover{
+    opacity: .7;
+}

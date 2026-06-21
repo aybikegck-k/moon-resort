@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accommodation | Gün Işığı Resort</title>
+
+    <link rel="stylesheet" href="accommodation.css">
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" style="text-decoration:none; color:inherit;">
+                GÜN IŞIĞI RESORT
+            </a>
+        </div>
+
+        <div class="nav-right">
+            <button class="menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <div class="hero-content">
+        <h1>ACCOMMODATION</h1>
+        <h2>Our Rooms & Suites</h2>
+        <p>Experience comfort, elegance and unforgettable views.</p>
+    </div>
+
+</section>
+
+<!-- INTRO -->
+<section class="intro">
+
+    <h2>Accommodation at Moonlight Resort</h2>
+
+    <p>
+        Moonlight Resort offers 48 Deluxe Rooms,
+        20 Premium Suites and 8 exclusive Gün Işığı Villas.
+        Each room is designed to provide comfort,
+        privacy and breathtaking views of the Mediterranean coast.
+    </p>
+
+</section>
+
+<!-- DELUXE ROOM -->
+<section class="room-section">
+
+    <div class="room-image">
+
+        <img id="deluxeMain" src="images/deluxe-room.jpg" class="main-image">
+
+        <div class="thumbnails">
+            <img src="images/deluxe2.jpg" onclick="changeDeluxe(this)">
+            <img src="images/deluxe3.jpg" onclick="changeDeluxe(this)">
+            <img src="images/deluxe4.jpg" onclick="changeDeluxe(this)">
+             <img src="images/deluxe-room.jpg" onclick="changeDeluxe(this)">
+             <img src="images/deluxe5.jpg" onclick="changeDeluxe(this)">
+            
+        </div>
+
+    </div>
+
+    <div class="room-info">
+        <h2>Deluxe Room</h2>
+
+        <ul>
+            <li>35 m²</li>
+            <li>Living Area</li>
+            <li>King Bed</li>
+            <li>Free Wi-Fi</li>
+            <li>Sea View</li>
+            <li>Mini Private Balcony</li>
+            <li>Mini Bar</li>
+        </ul>
+
+        <h3>From $480 / night</h3>
+    </div>
+
+</section>
+
+<!-- PREMIUM SUITE -->
+<section class="room-section reverse">
+
+    <div class="room-info">
+        <h2>Premium Suite</h2>
+
+        <ul>
+            <li>55 m²</li>
+            <li>Living Area</li>
+            <li>King Bed</li>
+            <li>Free Wi-Fi</li>
+            <li>Sea View</li>
+            <li>Private Balcony</li>
+            <li>Mini Bar</li>
+        </ul>
+
+        <h3>From $550 / night</h3>
+    </div>
+
+    <div class="room-image">
+
+        <img id="suiteMain" src="images/premium-suite.jpg" class="main-image">
+
+        <div class="thumbnails">
+            <img src="images/premium2.jpg" onclick="changeSuite(this)">
+            <img src="images/premium3.jpg" onclick="changeSuite(this)">
+            <img src="images/premium-banyo.jpg" onclick="changeSuite(this)">
+            <img src="images/premium-suite.jpg" onclick="changeSuite(this)">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- VILLA -->
+<section class="room-section">
+
+    <div class="room-image">
+
+        <img id="villaMain" src="images/viilabahce.jpg" class="main-image">
+
+        <div class="thumbnails">
+            <img src="images/villaoda.jpg" onclick="changeVilla(this)">
+            <img src="images/villateras.jpg" onclick="changeVilla(this)">
+            <img src="images/villa banyo.jpg" onclick="changeVilla(this)">
+            <img src="images/vilalküvet.jpg" onclick="changeVilla(this)">
+            <img src="images/villamutfak.jpg" onclick="changeVilla(this)">
+            <img src="images/viilabahce.jpg" onclick="changeVilla(this)">
+        </div>
+
+    </div>
+
+    <div class="room-info">
+        <h2>Moonlight Villa</h2>
+
+        <ul>
+            <li>80 m²</li>
+            <li>Living Area</li>
+            <li>King Bed</li>
+            <li>Private Pool</li>
+            <li>Private Terrace</li>
+            <li>Sea View</li>
+            <li>Private Bathtub</li>
+            <li>Private Kitchen</li>
+            <li>Free Wi-Fi</li>
+            <li>Private Bathtub</li>
+            <li>Private Garden</li>
+            
+        </ul>
+
+        <h3>From $650 / night</h3>
+    </div>
+
+</section>
+
+<!-- JS -->
+<script>
+function changeDeluxe(img) {
+    document.getElementById("deluxeMain").src = img.src;
+}
+
+function changeSuite(img) {
+    document.getElementById("suiteMain").src = img.src;
+}
+
+function changeVilla(img) {
+    document.getElementById("villaMain").src = img.src;
+}
+</script>
+
+</body>
+</html>
