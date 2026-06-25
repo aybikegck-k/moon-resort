@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation - Gün Işığı Resort</title>
+    <link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">GÜN IŞIĞI RESORT</a>
+        </div>
+    </nav>
+
+    <div class="reservation-container">
+        <h1>Make a Reservation</h1>
+        <form id="reservationForm">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            
+            <label>Check In</label>
+            <input type="date" id="check_in" required>
+            
+            <label>Check Out</label>
+            <input type="date" id="check_out" required>
+            
+            <input type="number" id="guests" min="1" placeholder="Guests" required>
+            
+            <button type="submit">Reserve Now</button>
+        </form>
+    </div>
+
+    <script src="reservation.js"></script>
+</body>
+</html>

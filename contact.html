@@ -4,100 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Gün Işığı Resort</title>
-
     <link rel="stylesheet" href="contact.css">
 </head>
+
 <body>
 
 <!-- HERO -->
-
 <section class="hero">
-
     <nav class="navbar">
-
-        <a href="index.html" class="logo">
-            GÜN IŞIĞI RESORT
-        </a>
-
-        <div class="nav-right">
-            
-            <button class="menu-btn">☰</button>
-        </div>
-
+        <a href="index.html" class="logo">GÜN IŞIĞI RESORT</a>
     </nav>
-    
 
     <div class="hero-content">
-
         <h1>CONTACT</h1>
-
-        <p>
-            We are here for you 7/24
-        </p>
-
+        <p>We are here for you 24/7</p>
     </div>
-
 </section>
 
 <!-- CONTACT INFO -->
-
 <section class="contact-info">
-
     <div class="box">
-
         <h2>Address</h2>
         <p>Moonlight Resort, Antalya / Türkiye</p>
-
     </div>
 
     <div class="box">
-
         <h2>Phone</h2>
         <p>+90 555 555 55 55</p>
-
     </div>
 
     <div class="box">
-
         <h2>Email</h2>
         <p>info@moonlightresort.com</p>
+    </div>
+</section>
 
+<!-- FAQ -->
+<section class="faq-container">
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+        <button class="faq-question">What are the check-in and check-out times?</button>
+        <div class="faq-answer"><p>Check-in time is 14:00 and check-out time is 12:00.</p></div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">Do you offer airport transfer services?</button>
+        <div class="faq-answer"><p>Yes, we can organize private or shared airport transfers upon request.</p></div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">Are pets allowed at the resort?</button>
+        <div class="faq-answer"><p>Due to hygiene and comfort standards, we do not allow pets.</p></div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">What does the "All-Inclusive" concept include?</button>
+        <div class="faq-answer"><p>Our concept includes open buffet breakfast, lunch, and dinner.</p></div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">Is there a parking area available?</button>
+        <div class="faq-answer"><p>Yes, we provide complimentary parking for our guests.</p></div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">Is Wi-Fi free?</button>
+        <div class="faq-answer"><p>High-speed Wi-Fi is available free of charge in all rooms and public areas.</p></div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">Pool and beach hours?</button>
+        <div class="faq-answer"><p>Pools are open from 08:00 to 19:00, beach is open all day.</p></div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">Do you have activities for children?</button>
+        <div class="faq-answer"><p>Yes, we have a kids' club and aquapark.</p></div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">How to cancel reservation?</button>
+        <div class="faq-answer"><p>You can manage it from "My Reservations" or contact support.</p></div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">Breakfast hours?</button>
+        <div class="faq-answer"><p>07:00 - 10:30 open buffet breakfast.</p></div>
     </div>
 
 </section>
 
-<!-- MAP + FORM -->
+<!-- CONTACT FORM -->
+<section class="form-container">
 
-<section class="contact-section">
+    <h2>Send a Message</h2>
 
-    <div class="map">
-
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18..."
-            allowfullscreen>
-        </iframe>
-
-    </div>
-
-    <div class="form">
-
-        <h2>Send a Message</h2>
-
-        <form>
-
-            <input type="text" placeholder="Your Name">
-
-            <input type="email" placeholder="Your Email">
-
-            <textarea placeholder="Your Message"></textarea>
-
-            <button type="submit">Send</button>
-
-        </form>
-
-    </div>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
 
 </section>
 
+
+<script>
+document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+        
+        const answer = button.nextElementSibling;
+
+        // açık mı kontrol et
+        if (answer.style.maxHeight) {
+            answer.style.maxHeight = null;
+        } else {
+            answer.style.maxHeight = answer.scrollHeight + "px";
+        }
+
+    });
+});
+</script>
 </body>
 </html>
