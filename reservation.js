@@ -9,7 +9,9 @@ form.addEventListener("submit", async (e) => {
         phone: document.getElementById("phone").value,
         check_in: document.getElementById("check_in").value,
         check_out: document.getElementById("check_out").value,
-        guests: Number(document.getElementById("guests").value)
+        guests: Number(document.getElementById("guests").value),
+        // Yeni eklediğimiz oda tipi değeri:
+        room_type: document.getElementById("room_type").value 
     };
 
     try {
@@ -23,6 +25,10 @@ form.addEventListener("submit", async (e) => {
                 body: JSON.stringify(reservation)
             }
         );
+
+        if (!response.ok) {
+            throw new Error("Sunucu yanıt vermedi");
+        }
 
         const data = await response.json();
 
